@@ -1,0 +1,31 @@
+{
+  "name": "ffosdigitalization",
+  "version": "1.0.0",
+  "description": "Book editions web application for University of Osijek",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amihaljevic/FFOSDigitalization.git"
+  },
+  "keywords": [
+    "ffos",
+    "digitalization"
+  ],
+  "author": "Andrea Mihaljević",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "browser-sync": "^2.23.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0"
+  }
+}
