@@ -50,7 +50,7 @@ gulp.task("bs-reload-js", ["js"], function(done) {
 gulp.task("img", function() {
   return gulp.src("src/img/**")
   .pipe(imagemin())
-  .pipe(gulp.dest("dist/"));
+  .pipe(gulp.dest("dist/img"));
 });
 
 // Image BrowserSync
