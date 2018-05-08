@@ -1,0 +1,19 @@
+.main {
+    padding: 5rem 0;
+}
+
+.main-header {
+    padding: 2rem 0;
+
+    h2 {
+        display: inline-block;
+    }
+
+    .form-inline {
+        float: right;
+    }
+
+    select.form-control {
+        margin-right: 1.5rem;
+    }
+}

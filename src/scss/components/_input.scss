@@ -1,0 +1,34 @@
+.form-control {
+    border-radius: 30px;
+    border: 1px solid #a9a9a9;
+    color: #494949;
+
+    &:focus {
+        border-color: #a9a9a9;
+        box-shadow: none;
+    }
+}
+
+// select.form-control {
+//     appearance: none;
+// }
+
+input.form-control {
+    border-right: none;
+}
+
+.input-group>.form-control:not(:first-child) {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.input-group-text {
+    background-color: #fff;
+    border: 1px solid #a9a9a9;
+    border-left: none;
+}
