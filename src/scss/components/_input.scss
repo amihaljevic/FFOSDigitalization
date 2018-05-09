@@ -9,13 +9,7 @@
     }
 }
 
-// select.form-control {
-//     appearance: none;
-// }
-
-input.form-control {
-    border-right: none;
-}
+input.form-control { border-right: none; }
 
 .input-group>.form-control:not(:first-child) {
     border-top-left-radius: 30px;

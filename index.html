@@ -26,7 +26,7 @@
                 <img src="dist/img/logo_hr.png" alt="FFOS Logo" class="img-fluid">
             </div>
             <div class="btn-container">
-                <button class="btn btn-primary">Prijavi se</button>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#logInModal">Prijavi se</button>
             </div>
         </div>
     </header>
@@ -39,6 +39,11 @@
                     <label for="genre" class="sr-only">Odaberite područje</label>
                     <select name="genre" id="genre" class="form-control">
                         <option value="">područje</option>
+                        <option value="">Hrvatska leksikografija</option>
+                        <option value="">Inaformacijske znanosti</option>
+                        <option value="">Povijest umjetnosti</option>
+                        <option value="">Njemačka književnost</option>
+                        <option value="">Engleska književnost</option>
                     </select>
                     <div class="input-group">
                         <label for="search" class="sr-only">Pretraži</label>
@@ -51,11 +56,11 @@
                     </div>
                 </form>
             </section>
-            <section class="row">
+            <section class="row card-deck">
                 <article class="col-sm-4">
                     <div class="card">
                         <div class="card__image">
-                            <img class="card-img-top" src="http://via.placeholder.com/200x300" alt="Card image cap">
+                            <img class="card-img-top" src="dist/img/rijec-o-rijecima-web.jpg" alt="Card image cap">
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Riječ o riječima</h3>
@@ -67,38 +72,70 @@
                 <article class="col-sm-4">
                     <div class="card">
                         <div class="card__image">
-                            <img class="card-img-top" src="http://via.placeholder.com/200x300" alt="Card image cap">
+                            <img class="card-img-top" src="dist/img/rijec-o-rijecima-web.jpg" alt="Card image cap">
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Riječ o riječima</h3>
                             <p class="card-subtitle">Ljiljana Koljenić</p>
+                            <i class="far fa-file-pdf"></i>
                         </div>
                     </div>
                 </article>
                 <article class="col-sm-4">
                     <div class="card">
                         <div class="card__image">
-                            <img class="card-img-top" src="http://via.placeholder.com/200x300" alt="Card image cap">
+                            <img class="card-img-top" src="dist/img/rijec-o-rijecima-web.jpg" alt="Card image cap">
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Riječ o riječima</h3>
                             <p class="card-subtitle">Ljiljana Koljenić</p>
+                            <i class="far fa-file-pdf"></i>
                         </div>
                     </div>
                 </article>
                 <article class="col-sm-4">
                     <div class="card">
                         <div class="card__image">
-                            <img class="card-img-top" src="http://via.placeholder.com/200x300" alt="Card image cap">
+                            <img class="card-img-top" src="dist/img/rijec-o-rijecima-web.jpg" alt="Card image cap">
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Riječ o riječima</h3>
                             <p class="card-subtitle">Ljiljana Koljenić</p>
+                            <i class="far fa-file-pdf"></i>
                         </div>
                     </div>
                 </article>
             </section>
         </div>
+        <section class="modal" tabindex="-1" role="dialog" id="logInModal">
+            <article class="modal-dialog" role="document">
+              <div class="modal-content">
+                <section class="modal-header">
+                  <h5 class="modal-title">Prijava</h5>
+                  <p>Prijava u FFOS sustav online baze knjiga</p>
+                  <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button> -->
+                </section>
+                <section class="modal-body">
+                  <form action="">
+                    <div class="form-group">
+                        <label for="username" class="sr-only">Korisničko ime</label>
+                        <input type="text" name="usernam" id="username" class="form-control" placeholder="korisničko ime">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="sr-only">Lozinka</label>
+                        <input type="password" name="password" id="password" class="form-control" placeholder="lozinka">
+                    </div>
+                    <button type="button" class="btn btn-primary">Prijavi se</button>
+                  </form>
+                </section>
+              </div>
+            </article>
+        </section>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
 </html>

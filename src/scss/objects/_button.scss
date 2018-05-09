@@ -11,8 +11,7 @@
     &:hover,
     &:focus {
         border-color: transparent;
-        background: rgb(125,43,43);
-        background: linear-gradient(90deg, rgba(125,43,43,1) 0%, rgba(184,52,45,1) 46%, rgba(215,150,58,1) 100%);
-        box-shadow: none;
+        background-color: #b8342d;
+        box-shadow: 0px 2px 4px rgba(233,233,233,0.5);
     }
 }

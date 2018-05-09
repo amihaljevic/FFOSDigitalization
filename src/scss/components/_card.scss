@@ -1,5 +1,12 @@
-.card {
+.card-deck {
+    margin-top: 2rem;
+}
+
+.card-deck .card {
     border: none;
+    margin-bottom: 3rem;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .card__image {
@@ -9,6 +16,17 @@
 
 .card-body {
     padding: 1.25rem 0;
+
+    .far.fa-file-pdf {
+        float: right;
+        margin-top: -2.5rem;
+        font-size: 2rem;
+
+        &:hover,
+        &:visited {
+            color: #b9342d;
+        }
+    }
 }
 
 .card-title {
