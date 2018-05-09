@@ -1,33 +1,57 @@
-.modal-dialog {
-    margin: 9.75rem auto;
-}
+.modal-dialog { margin: 9.75rem auto; }
 
-.modal-content {
-    border-radius: 30px;
-}
+.modal-content { border-radius: 30px; }
 
-.modal-header {
+.login-modal .modal-header {
     display: block;
     text-align: center;
     padding: 2rem 4rem;
-
-    .close {
-        margin-top: -5.5rem;
-    }
 }
 
-.modal-title {
-    margin-bottom: 0.25rem;
-}
+.modal-title { margin-bottom: 0.25rem; }
 
 .modal-body {
     padding: 2rem 4rem 6rem;
 
-    input.form-control {
-        border: 1px solid #a9a9a9;
+    input.form-control { border: 1px solid #a9a9a9; }
+
+    .btn-login { width: 100%; }
+}
+
+.details-modal {
+    .close {
+        color: #b9342d;
+        font-size: 2.5rem;
+        opacity: 1;
     }
 
-    button {
-        width: 100%;
+    .modal-header {
+        border-bottom: none;
+    }
+
+    .modal-body {
+        label {
+            color: #333;
+            font-size: 1.313rem;
+            margin-bottom: 0;
+        }
+
+        p { color: #999; }
+    }
+
+    .modal-body {
+        padding-top: 6rem;
+    }
+
+    .card-body {
+        p {
+            text-align: right;
+            width: 85%;
+            display: inline-block;
+            margin-top: 0.45rem;
+            color: #333;
+        }
+
+        .far.fa-file-pdf { color: #b9342d; }
     }
 }

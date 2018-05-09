@@ -58,56 +58,64 @@
             </section>
             <section class="row card-deck">
                 <article class="col-sm-4">
-                    <div class="card">
+                    <div class="card" data-toggle="modal" data-target="#bookDetailsModal">
                         <div class="card__image">
                             <img class="card-img-top" src="dist/img/rijec-o-rijecima-web.jpg" alt="Card image cap">
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Riječ o riječima</h3>
-                            <p class="card-subtitle">Ljiljana Koljenić</p>
+                            <section class="title-details">
+                                <h3 class="card-title">Riječ o riječima</h3>
+                                <p class="card-subtitle">Ljiljana Koljenić</p>
+                            </section>
                             <i class="far fa-file-pdf"></i>
                         </div>
                     </div>
                 </article>
                 <article class="col-sm-4">
-                    <div class="card">
+                    <div class="card" data-toggle="modal" data-target="#bookDetailsModal">
                         <div class="card__image">
                             <img class="card-img-top" src="dist/img/rijec-o-rijecima-web.jpg" alt="Card image cap">
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Riječ o riječima</h3>
-                            <p class="card-subtitle">Ljiljana Koljenić</p>
+                            <section class="title-details">
+                                <h3 class="card-title">Riječ o riječima</h3>
+                                <p class="card-subtitle">Ljiljana Koljenić</p>
+                            </section>
                             <i class="far fa-file-pdf"></i>
                         </div>
                     </div>
                 </article>
                 <article class="col-sm-4">
-                    <div class="card">
+                    <div class="card" data-toggle="modal" data-target="#bookDetailsModal">
                         <div class="card__image">
                             <img class="card-img-top" src="dist/img/rijec-o-rijecima-web.jpg" alt="Card image cap">
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Riječ o riječima</h3>
-                            <p class="card-subtitle">Ljiljana Koljenić</p>
+                            <section class="title-details">
+                                <h3 class="card-title">Riječ o riječima</h3>
+                                <p class="card-subtitle">Ljiljana Koljenić</p>
+                            </section>
                             <i class="far fa-file-pdf"></i>
                         </div>
                     </div>
                 </article>
                 <article class="col-sm-4">
-                    <div class="card">
+                    <div class="card" data-toggle="modal" data-target="#bookDetailsModal">
                         <div class="card__image">
                             <img class="card-img-top" src="dist/img/rijec-o-rijecima-web.jpg" alt="Card image cap">
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Riječ o riječima</h3>
-                            <p class="card-subtitle">Ljiljana Koljenić</p>
+                            <section class="title-details">
+                                <h3 class="card-title">Riječ o riječima</h3>
+                                <p class="card-subtitle">Ljiljana Koljenić</p>
+                            </section>
                             <i class="far fa-file-pdf"></i>
                         </div>
                     </div>
                 </article>
             </section>
         </div>
-        <section class="modal" tabindex="-1" role="dialog" id="logInModal">
+        <section class="modal login-modal" tabindex="-1" role="dialog" id="logInModal">
             <article class="modal-dialog" role="document">
               <div class="modal-content">
                 <section class="modal-header">
@@ -127,10 +135,62 @@
                         <label for="password" class="sr-only">Lozinka</label>
                         <input type="password" name="password" id="password" class="form-control" placeholder="lozinka">
                     </div>
-                    <button type="button" class="btn btn-primary">Prijavi se</button>
+                    <button type="button" class="btn btn-primary btn-login">Prijavi se</button>
                   </form>
                 </section>
               </div>
+            </article>
+        </section>
+        <section class="modal details-modal" tabindex="-1" role="dialog" id="bookDetailsModal">
+            <article class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <section class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <article class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card__image">
+                                            <img class="card-img-top" src="dist/img/rijec-o-rijecima-web.jpg" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Download</p>
+                                            <i class="far fa-file-pdf"></i>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="col-sm-6">
+                                    <label for="title">Naslov</label>
+                                    <p>Riječ o riječima</p>
+                                    <label for="subtitle">Podnaslov</label>
+                                    <p>Iz hrvatske leksikologije i frazeologije 17. i 18. stoljeća</p>
+                                    <label for="author">Autor</label>
+                                    <p>Ljiljana Kolenić</p>
+                                    <label for="publisher">Izdavač</label>
+                                    <p>Pedagoški fakultet u Osijeku</p>
+                                    <label for="year">Godina izdavanja</label>
+                                    <p>1998.</p>
+                                    <label for="place">Mjesto izdavanja</label>
+                                    <p>Osijek</p>
+                                    <label for="pages">Broj stranica</label>
+                                    <p>195</p>
+                                </article>
+                            </div>
+                            <div class="row">
+                                <article class="col-sm-12">
+                                    <label for="summary">Sažetak:</label>
+                                    <p>
+                                        Knjiga je podijeljena u dvije velike cjeline: Leksikologiju i Frazeologiju. U prvoj cjelini pod 
+                                        naslovom Leksikologija govori se o rječnicima u gramatikama Tome Babića, Lovre Šitovića Ljubušaka, 
+                                        Blaža Tadijanovića, Matije Antuna Reljkovića i Marijana Lanosovića. U drugom dijelu pod naslovom 
+                                        Frazeologija govori se o frazeologiji u Habdelićevu i Belostenićevu rječniku, te u književnim 
+                                        djelima M. A. Reljkovića (Satir), Vida Došena (Aždaja) i Antuna Kanižlića (Rožalija). Na kraju 
+                                        knjige daje se popis najfrekventnijih frazema u navedenim djelima.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </article>
         </section>
     </main>

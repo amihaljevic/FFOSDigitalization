@@ -1,8 +1,6 @@
-.card-deck {
-    margin-top: 2rem;
-}
+.card-deck { margin-top: 2rem; }
 
-.card-deck .card {
+.card-deck .card, .card {
     border: none;
     margin-bottom: 3rem;
     margin-left: 0;
@@ -19,14 +17,16 @@
 
     .far.fa-file-pdf {
         float: right;
-        margin-top: -2.5rem;
         font-size: 2rem;
 
         &:hover,
-        &:visited {
-            color: #b9342d;
-        }
+        &:visited { color: #b9342d; }
     }
+}
+
+.title-details {
+    display: inline-block;
+    width: 85%;
 }
 
 .card-title {
