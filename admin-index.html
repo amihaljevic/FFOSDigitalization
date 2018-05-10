@@ -32,87 +32,41 @@
     </header>
     <main class="main">
         <div class="container">
-            <p>Online baza knjiga izdanih od strane Filozofskog fakulteta u Osijeku</p>
-            <section class="main-header">
-                <h2>Hrvatska leksikografija</h2>
-                <form action="" class="form-inline">
-                    <label for="genre" class="sr-only">Odaberite područje</label>
-                    <select name="genre" id="genre" class="form-control">
-                        <option value="">područje</option>
-                        <option value="">Hrvatska leksikografija</option>
-                        <option value="">Inaformacijske znanosti</option>
-                        <option value="">Povijest umjetnosti</option>
-                        <option value="">Njemačka književnost</option>
-                        <option value="">Engleska književnost</option>
-                    </select>
-                    <div class="input-group">
-                        <label for="search" class="sr-only">Pretraži</label>
-                        <input type="text" name="search" id="search" class="form-control" placeholder="Unesite ime autora ili naziva knjige">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text">
-                                <i class="fas fa-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+            <section class="admin-index main-header">
+                <p>Odaberite radnju koju želite izvršiti nad odabranim naslovom.</p>
+                <button class="btn btn-primary">Dodaj knjigu</button>
             </section>
-            <section class="row card-deck">
-                <article class="col-sm-4">
-                    <div class="card" data-toggle="modal" data-target="#bookDetailsModal">
-                        <div class="card__image">
-                            <img class="card-img-top" src="dist/img/rijec-o-rijecima-web.jpg" alt="Card image cap">
+            <section class="row">
+                <ol class="list-group">
+                    <li class="list-group-item">
+                        <p>Ljiljana Kolenić - Riječ o riječima</p>
+                        <div class="crud-controls">
+                            <p class="crud-update"><a href="">Promijeni</a></p>
+                            <p class="crud-delete"><a href="">Obriši</a></p>
                         </div>
-                        <div class="card-body">
-                            <section class="title-details">
-                                <h3 class="card-title">Riječ o riječima</h3>
-                                <p class="card-subtitle">Ljiljana Koljenić</p>
-                            </section>
-                            <i class="far fa-file-pdf"></i>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Ljiljana Kolenić - Riječ o riječima</p>
+                        <div class="crud-controls">
+                            <p class="crud-update"><a href="">Promijeni</a></p>
+                            <p class="crud-delete"><a href="">Obriši</a></p>
                         </div>
-                    </div>
-                </article>
-                <article class="col-sm-4">
-                    <div class="card" data-toggle="modal" data-target="#bookDetailsModal">
-                        <div class="card__image">
-                            <img class="card-img-top" src="dist/img/rijec-o-rijecima-web.jpg" alt="Card image cap">
+                    </li>
+                    <li class="list-group-item">
+                        <p>Ljiljana Kolenić - Riječ o riječima</p>
+                        <div class="crud-controls">
+                            <p class="crud-update"><a href="">Promijeni</a></p>
+                            <p class="crud-delete"><a href="">Obriši</a></p>
                         </div>
-                        <div class="card-body">
-                            <section class="title-details">
-                                <h3 class="card-title">Riječ o riječima</h3>
-                                <p class="card-subtitle">Ljiljana Koljenić</p>
-                            </section>
-                            <i class="far fa-file-pdf"></i>
+                    </li>
+                    <li class="list-group-item">
+                        <p>Ljiljana Kolenić - Riječ o riječima</p>
+                        <div class="crud-controls">
+                            <p class="crud-update"><a href="">Promijeni</a></p>
+                            <p class="crud-delete"><a href="">Obriši</a></p>
                         </div>
-                    </div>
-                </article>
-                <article class="col-sm-4">
-                    <div class="card" data-toggle="modal" data-target="#bookDetailsModal">
-                        <div class="card__image">
-                            <img class="card-img-top" src="dist/img/rijec-o-rijecima-web.jpg" alt="Card image cap">
-                        </div>
-                        <div class="card-body">
-                            <section class="title-details">
-                                <h3 class="card-title">Riječ o riječima</h3>
-                                <p class="card-subtitle">Ljiljana Koljenić</p>
-                            </section>
-                            <i class="far fa-file-pdf"></i>
-                        </div>
-                    </div>
-                </article>
-                <article class="col-sm-4">
-                    <div class="card" data-toggle="modal" data-target="#bookDetailsModal">
-                        <div class="card__image">
-                            <img class="card-img-top" src="dist/img/rijec-o-rijecima-web.jpg" alt="Card image cap">
-                        </div>
-                        <div class="card-body">
-                            <section class="title-details">
-                                <h3 class="card-title">Riječ o riječima</h3>
-                                <p class="card-subtitle">Ljiljana Koljenić</p>
-                            </section>
-                            <i class="far fa-file-pdf"></i>
-                        </div>
-                    </div>
-                </article>
+                    </li>
+                </ol>
             </section>
         </div>
         <section class="modal login-modal" tabindex="-1" role="dialog" id="logInModal">
