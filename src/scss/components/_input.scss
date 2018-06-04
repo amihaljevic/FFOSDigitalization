@@ -9,7 +9,7 @@
     }
 }
 
-input.form-control { border-right: none; }
+.form-inline input.form-control { border-right: none; }
 
 .input-group>.form-control:not(:first-child) {
     border-top-left-radius: 30px;
@@ -25,4 +25,45 @@ input.form-control { border-right: none; }
     background-color: #fff;
     border: 1px solid #a9a9a9;
     border-left: none;
+}
+
+.crud-form {
+    margin-top: 3rem;
+
+    label {
+        color: #f38d28;
+        font-size: 0.875rem;
+    }
+
+    .form-control {
+        font-size: 0.875rem;
+    }
+}
+
+.input-file {
+    text-align: center;
+
+    .offset-sm-2 {
+        margin-left: 17.666667%;
+    }
+
+    .form-group {
+        border: 1px dashed #a9a9a9;
+        width: 25%;
+        padding: 5rem 0;
+
+        &:last-child {
+            margin-left: 2rem;
+        }
+    }
+
+    label {
+        display: block;
+        color: #494949;
+    }
+
+    .btn-outline {
+        position: relative;
+        top: -2rem;
+    }
 }

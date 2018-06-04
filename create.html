@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta name="description" content="BOBCATSSS is an annual symposium in the field of library and information science.">
+    <meta property="og:url" content="http://bobcatsss2019.ffos.hr/" /> -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FFOS Digitalizacija" />
+    <!-- <meta property="og:description" content="BOBCATSSS is an annual symposium in the field of library and information science." />
+    <meta property="og:image" content="dist/logo/logo_typography.png" />
+    <link rel="shortcut icon" href="bobcatsss.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/base.min.css">
+    <title>FFOS Digitalizacija</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="img-container">
+                <img src="dist/img/logo_hr.png" alt="FFOS Logo" class="img-fluid">
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-login" data-toggle="modal" data-target="#logInModal">Prijavi se</button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <p>Popunite podatke kako biste unijeli novu knjigu</p>
+            <section class="crud-form">
+                <form action="">
+                    <div class="form-group row">
+                        <label for="title" class="col-sm-2 col-form-label">Naslov djela</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="title" name="title" placeholder="Naslov" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="subtitle" class="col-sm-2 col-form-label">Podnaslov djela</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="subtitle" name="subtitle" placeholder="Podnaslov" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="author" class="col-sm-2 col-form-label">Autor djela</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="author" name="author" placeholder="Autor" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="publisher" class="col-sm-2 col-form-label">Izdavač djela</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="publisher" name="publisher" placeholder="Izdavač" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="year" class="col-sm-2 col-form-label">Godina izdavanja</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" id="year" name="year" placeholder="Godina izdavanja" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="place" class="col-sm-2 col-form-label">Mjesto izdavanja</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="place" name="place" placeholder="Mjesto izdavanja" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="pages" class="col-sm-2 col-form-label">Broj stranica</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" id="pages" name="pages" placeholder="Broj stranica">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="summary" class="col-sm-2 col-form-label">Sažetak</label>
+                        <div class="col-sm-8">
+                            <textarea name="summary" id="summary" cols="30" rows="10" class="form-control" placeholder="Sažetak" required></textarea>
+                        </div>
+                    </div>
+                    <div class="input-file row">
+                        <div class="form-group offset-sm-2">
+                            <div class="custom-file">
+                                <label for="img">Učitajte fotografiju</label>
+                                <input type="file" name="img" id="img" class="custom-file-input">
+                                <button type="button" class="btn btn-outline">Choose file</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-file">
+                                <label for="pdf">Učitajte PDF</label>
+                                <input type="file" name="pdf" id="pdf" class="custom-file-input">
+                                <button type="button" class="btn btn-outline">Choose file</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary offset-sm-2">Dodaj knjigu</button>
+                </form>
+            </section>
+        </div>
+        <section class="modal login-modal" tabindex="-1" role="dialog" id="logInModal">
+            <article class="modal-dialog" role="document">
+              <div class="modal-content">
+                <section class="modal-header">
+                  <h5 class="modal-title">Prijava</h5>
+                  <p>Prijava u FFOS sustav online baze knjiga</p>
+                </section>
+                <section class="modal-body">
+                  <form action="">
+                    <div class="form-group">
+                        <label for="username" class="sr-only">Korisničko ime</label>
+                        <input type="text" name="usernam" id="username" class="form-control" placeholder="korisničko ime">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="sr-only">Lozinka</label>
+                        <input type="password" name="password" id="password" class="form-control" placeholder="lozinka">
+                    </div>
+                    <button type="button" class="btn btn-login">Prijavi se</button>
+                  </form>
+                </section>
+              </div>
+            </article>
+        </section>
+        <section class="modal details-modal" tabindex="-1" role="dialog" id="bookDetailsModal">
+            <article class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <section class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <article class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card__image">
+                                            <img class="card-img-top" src="dist/img/rijec-o-rijecima-web.jpg" alt="Card image cap">
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Download</p>
+                                            <i class="far fa-file-pdf"></i>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="col-sm-6">
+                                    <label for="title">Naslov</label>
+                                    <p>Riječ o riječima</p>
+                                    <label for="subtitle">Podnaslov</label>
+                                    <p>Iz hrvatske leksikologije i frazeologije 17. i 18. stoljeća</p>
+                                    <label for="author">Autor</label>
+                                    <p>Ljiljana Kolenić</p>
+                                    <label for="publisher">Izdavač</label>
+                                    <p>Pedagoški fakultet u Osijeku</p>
+                                    <label for="year">Godina izdavanja</label>
+                                    <p>1998.</p>
+                                    <label for="place">Mjesto izdavanja</label>
+                                    <p>Osijek</p>
+                                    <label for="pages">Broj stranica</label>
+                                    <p>195</p>
+                                </article>
+                            </div>
+                            <div class="row">
+                                <article class="col-sm-12">
+                                    <label for="summary">Sažetak:</label>
+                                    <p>
+                                        Knjiga je podijeljena u dvije velike cjeline: Leksikologiju i Frazeologiju. U prvoj cjelini pod 
+                                        naslovom Leksikologija govori se o rječnicima u gramatikama Tome Babića, Lovre Šitovića Ljubušaka, 
+                                        Blaža Tadijanovića, Matije Antuna Reljkovića i Marijana Lanosovića. U drugom dijelu pod naslovom 
+                                        Frazeologija govori se o frazeologiji u Habdelićevu i Belostenićevu rječniku, te u književnim 
+                                        djelima M. A. Reljkovića (Satir), Vida Došena (Aždaja) i Antuna Kanižlića (Rožalija). Na kraju 
+                                        knjige daje se popis najfrekventnijih frazema u navedenim djelima.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
