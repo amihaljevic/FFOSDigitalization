@@ -1,4 +1,11 @@
-.card-deck { margin-top: 2rem; }
+.card-deck { 
+    margin-top: 2rem;
+    flex-direction: row;
+
+    @media screen and (max-width: 426px) {
+        margin-top: 0;
+    }
+}
 
 .card-deck .card, .card {
     border: none;

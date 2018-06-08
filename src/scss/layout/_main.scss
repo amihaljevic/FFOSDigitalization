@@ -1,13 +1,30 @@
 .main {
     padding: 5rem 0;
+
+    @media screen and (max-width: 426px) {
+        padding: 3rem 0;
+    }
 }
 
 .main-header {
     padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
 
-    h2 { display: inline-block; }
+    @media screen and (max-width: 426px) {
+        flex-direction: column-reverse;
 
-    .form-inline { float: right; }
+        h2 {
+            margin-top: 2rem;
+        }
+    }
 
-    select.form-control { margin-right: 1.5rem; }
+    select.form-control { 
+        margin-right: 1.5rem;
+
+        @media screen and (max-width: 426px) {
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
+    }
 }
