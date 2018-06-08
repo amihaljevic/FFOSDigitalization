@@ -19,17 +19,9 @@
 }
 
 .details-modal {
-    .close {
-        color: #b9342d;
-        font-size: 2.5rem;
-        opacity: 1;
-    }
-
-    .modal-header {
-        border-bottom: none;
-    }
-
     .modal-body {
+        padding-top: 6rem;
+
         label {
             color: #333;
             font-size: 1.313rem;
@@ -37,10 +29,6 @@
         }
 
         p { color: #999; }
-    }
-
-    .modal-body {
-        padding-top: 6rem;
     }
 
     .card-body {
